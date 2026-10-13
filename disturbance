@@ -202,7 +202,7 @@ local entity = spawner.Create({
 
 		Hi = {  
 
-			"You died to DiSturbance.",  
+			"You died to Disturbance",  
 
 			"When it appears, the room turns pink.",  
 
@@ -647,5 +647,5 @@ achievementGiver({
     Title = "A memorable fight",
     Desc = "Found you",
     Reason = "Encounter disturbance",
-    Image = "rbxassetid://80921932542636"
+    Image = "rbxassetid://77519191312265"
 })
