@@ -124,95 +124,39 @@ end
 
 -- CREATE ENTITY
 
-
-
 local entity = spawner.Create({
-
 	Entity = {
-
-		Name = "diSturbance",
-
+		Name = "Disturbance",
 		Asset = "rbxassetid://112905346166455",
-
 		HeightOffset = 0
-
 	},
-
-
-
-	Lights = {  
-
+    Lights = {  
 		Flicker = {Enabled = false},  
-
 		Shatter = true,  
-
 		Repair = false  
-
 	},  
-
-
-
 	CameraShake = {  
-
 		Enabled = true,  
-
 		Range = 80,  
-
 		Values = {0.6, 10, 0.2, 0.6}  
-
 	},  
-
-
-
 	Movement = {  
-
 		Speed = 130,
-
 		Delay = 15,  
-
 		Reversed = false  
-
 	},  
-
-
-
 	Rebounding = {  
-
 		Enabled = false  
-
 	},  
-
-
-
 	Damage = {  
-
 		Enabled = true,  
-
 		Range = 40,  
-
-		Amount = 200  
-
+		Amount = 200  	
 	},  
-
-
-
 	Death = {  
-
 		Type = "Guiding",  
-
-		Hi = {  
-
-			"You died to Disturbance",  
-
-			"When it appears, the room turns pink.",  
-
-			"The sound is your only warning.",  
-
-			"Hide quickly."  
-
-		},  
-
-		Cause = "Disturbance"  
+		Hints = {"You died to Dizturbance.", "When it appears, the room turns pink.", "The sound is your only warning.", "Hide quickly."},  
+        Cause = "Dizturbance"  
 
 	}
 
@@ -639,9 +583,11 @@ end)
 
 entity:Run()
 
+-- ACHIVIEVEMENTS
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
-
+---====== wait command ======---
+task.wait(5)
 ---====== Display achievement ======---
 achievementGiver({
     Title = "A memorable fight",
